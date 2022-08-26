@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Top Header */
+#mainHeader {
+  background-color: #295197;
+  padding: 0 1em;
+}
+
+#mainHeader img {
+  height: 50px;
+}
+
+#mainHeader #hamburger {
+  cursor: pointer;
+}
+
+#mainHeader > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+/* Main Content */
+.container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#leftMenu {
+  width: 20%;
+  background-color: #295197;
+  height: 100vh;
+  position: fixed;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 2em;
+  display: none;
+}
+
+#leftMenu > ul {
+  list-style-type: none;
+  padding: 1em 1em 0;
+}
+
+#leftMenu > ul li a {
+  line-height: 1.9;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+#leftMenu > ul li a:hover {
+  color: #cabbd8;
+}
+
+#home {
+  background-image: url('images/canoe.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 1em;
+}
+
+#home > h1 {
+  padding: 5em 0;
+  margin: auto;
+  text-align: center;
+  color: #c9c9cf;
+}
+
+hr {
+  color: lightgray;
+}
+
+/* Sections */
+
+section {
+  padding-top: 1em;
+}
+
+section h3 {
+  color: #54a154;
+  text-decoration: underline;
+  margin-bottom: 0.5em;
+}
+
+section .summary {
+  font-size: 1.25em;
+  padding-top: 0.5em;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding-top: 1.25em;
+  height: 50px;
+  background: #295197;
+  color: #fff;
+}
+
+footer > small > a {
+  text-decoration: none;
+  color: #fff;
+  font-style: italic;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  #leftMenu {
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

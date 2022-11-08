@@ -80,7 +80,7 @@ html, body {
   margin-bottom: 1em;
 }
 
-#home > h1 {
+h1 {
   padding: 5em 0;
   margin: auto;
   text-align: center;

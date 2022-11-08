@@ -36,43 +36,34 @@
             Canada
           </h1>
         </div> -->
-      <div id="formContainer">
-        <h2>Just Some Quick Details</h2>
+    <h2>Admin - Add Adventure</h2>
+    <hr>
+    <form method="post" action="admin-confirm.php">
+      <fieldset>
+        <legend>Your Trip Details</legend>
         
-        <form method="_GET" action="thankYou.php">
+        <div class="form-control">
+          <label for="heading">Heading:</label>
+          <input type="text" name="heading" id="heading" required>
+        </div>
 
-          <fieldset>
-            <legend>Your Information</legend>
+        <div class="form-control">
+          <label for="tripdate">Trip Date:</label>
+          <input type="date" id="tripdate" name="tripdate" required>
+        </div>
 
-            <div class="form-control">
-              <label for="email">Email:</label>
-              <input type="email" name="email" id="email" required>
-            </div>
+        <div class="form-control">
+        <label for="duration">Duration:</label>
+        <input type="text" id="duration" name="duration" required>
+        </div>
 
-
-
-            <div class="form-control">
-              <label for="location">Location:</label>
-              <select name="location" id="country">
-                <option value="Select">Select</option>
-                <option value="Canada" required>Canada</option>
-                <option value="Australia">Australia</option>
-              </select>
-            </div>
-
-            <div class="form-control">
-              <label for="date">Date:</label>
-              <input type="date" id="date" name="date" required>
-            </div>
-
-          </fieldset>  
-
-          <button class="buttons" type="submit" value="Submit">Submit</button>
-
-        </form>
-      </div>
-    </main>
-    </div>
+        <div class="form-control">
+          <label for="summary">Summary:</label>
+          <textarea name="summary" id="summary" cols="30" rows="10" required></textarea>
+        </div>
+      </fieldset>
+        <input class="buttons" type="submit" value="Submit" name="submit">
+    </form>
     <footer>
       <small>
         &copy;2022 Project One <br />
